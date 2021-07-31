@@ -1,0 +1,34 @@
+<div class="container">
+<div class="postMalone text-center col-md-6">
+  <h2 class="postMan">{{title}}</h2>
+  <div class="col-4">
+  <p class="postContent text-center">{{content}}</p>
+  <p class="postInfo text-center">Created by {{user.name}} on {{format_date date_created}}</p>
+  </div>
+</div>
+</div>
+{{#if logged_in}}
+
+<form class="container flex-wrap d-flex justify-content-center" id="newComment" data-postid={{id}}>
+  <div class="p-2">
+    <textarea id="postComment" name="comment-section" placeholder="Add Comment..." rows="3">
+    </textarea>
+  </div>
+    <div>
+    <button type="submit" class="btn btn-secondary">Add a Comment</button>
+  </div>
+</form>
+
+{{/if}}
+
+<div class="container">
+<h2 class="text-center">Comments</h2>
+{{#each comments as |comment|}}
+<div class="commentBox">
+  <p class="commentStuff">{{comment.new_comment}}</p>
+  <p class="commentUser">Created By: {{comment.user.name}} on {{format_date date_created}}</p>
+</div>
+</div>
+{{/each}}
+
+<script src="./js/comment.js"></script>

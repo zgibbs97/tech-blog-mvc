@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="flex-column">
+    <div class="container-fluid display-flex align-center p-2">
+     <nav class="navBar navbar flex-sm-row">
+      <h1 class="navbar-brand">Tech Blog</h1>
+      <a class="home-title nav-link active" aria-current="page" href="/">Home</a>
+      {{#if logged_in}}
+      <a class="flex-sm-fill text-sm-center nav-link" href="/dashboard">Dashboard</a>|
+      <button class="no-button" id="logout">Logout</button>
+      {{else}}
+      <a class="flex-sm-fill text-sm-center home-title nav-link" href="/login">Login</a>
+      <a class="flex-sm-fill text-sm-center home-title nav-link" href="/signup">SignUp</a>
+      {{/if}}
+      </nav>
+    </div>
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="./js/logout.js"></script>
+  {{/if}}
+</body>
+</html>

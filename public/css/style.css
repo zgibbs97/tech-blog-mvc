@@ -1,0 +1,149 @@
+body {
+  background-color: rgb(187, 164, 128);
+}
+
+.navBar {
+  background-color: rgb(59, 84, 199);
+  width: 100%;
+  height: 4rem;
+  padding: .5rem;
+  color: whitesmoke;
+}
+.navBar .nav-link {
+  justify-content: space-around;
+  color: whitesmoke;
+  padding: auto;
+}
+
+.nav-link:hover {
+  color:black;
+  border: cornsilk 2px solid;
+}
+
+h1 {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navBar .home-title {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color:whitesmoke;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.postTitle {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  color: black;
+}
+
+.postCard {
+  border-style: solid;
+  background-color: thistle;
+  color: aliceblue;
+  padding: 5px 5px 5px 5px;
+  width: 40vw;
+}
+.postBy {
+  color: gold;
+  font-size: 20px;
+}
+.postBox {
+  padding: .25rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.postMalone {
+  margin-top: 15px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cornflowerblue;
+}
+.postMan {
+text-decoration: none;
+font-size: 35px;
+font-weight: 500;
+border-bottom-style: groove;
+border-bottom-color: cadetblue;
+margin-bottom: 1rem;
+}
+
+.postContent{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.postInfo {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  padding: .5rem;
+}
+
+.dashboard {
+  text-align: center;
+  margin: auto;
+  width: auto;
+  font-size: 45px;
+}
+
+.post-list {
+  text-align: center;
+  margin: auto;
+  width: auto;
+  font-size: 35px;
+}
+
+.newPost {
+  margin: auto;
+  width: auto;
+}
+
+.createPost {
+  margin: auto;
+  width: auto;
+}
+
+.postHeader {
+  font-size: 25px;
+  color: black;
+  margin: auto;
+  width: auto;
+}
+
+.commentbox {
+  border: 3px solid black;
+}
+
+.commentStuff {
+  font-size: 15px;
+}
+
+.commentUser {
+  font-size: 20px;
+  font-weight: 300;
+}
